@@ -150,6 +150,7 @@ tr:hover {
 td:last-child {
     font-weight: bold;
     color: #28a745;
+    text-align: center;
 }
 
 /* Back Link Styles */

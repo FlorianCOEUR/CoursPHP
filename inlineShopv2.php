@@ -80,7 +80,7 @@ function reduction($total){
                 $reduction = reduction($total);
                 $totalFinal = $total * (1 - $reduction / 100);
                 $type = sortCmd($total);
-                $fraisLivraison = freeShip($total) ? "Offerts" : "Payants";
+                $fraisLivraison = freeShip($total) ? "✅" : "💩";
                 ?>
                 <tr>
                     <td><?php echo $index + 1; ?></td>

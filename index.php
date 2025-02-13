@@ -15,7 +15,9 @@
         <a href="salaires.php">Gestion de salaires</a>
         <a href="exotableau.php">Gestion des étudiants</a>
         <a href="triTableau.php">Tri de tableau de voitures</a>
+        <a href="useFonctions.php">Utilisation des fonctions</a>
+        <a href="inlineShop.php">Bilan de tout</a>
+        <a href="readme.php">Voir le README</a>
     </div>
-
 </body>
 </html>

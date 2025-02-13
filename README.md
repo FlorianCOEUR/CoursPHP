@@ -37,3 +37,30 @@ On devais faire une disctinction entre les mineurs et les majeurs
 Exercice : Manipuler du HTML avec PHP
 - Créer un tableau associatif comprenant une marque, un nom d’objet, une couleur et un prix.
 - Générer un tableau HTML avec ces données stockées en PHP.
+
+# Exercice 5: useFonctions.php
+
+Exercice :
+- Reprendre le tableau de l’exercice précédent et trier les éléments par le prix avec une fonction native
+- Ajouter un identifiant dans une colonne du tableau qui sera un nombre aléatoire généré entre 1 et 100
+- Mettre en majuscules le nom des marques
+- Déclarer un second tableau et l’ajouter au premier avant d’afficher les éléments
+
+# Excercice 6: inlineShop.php
+
+## Gestion des Commandes d’un Magasin en Ligne
+Contexte
+
+Vous devez développer un programme en PHP pour gérer les commandes d’un magasin en ligne. Chaque commande contient plusieurs articles avec leur prix et leur quantité.
+- Calculer le total de chaque commande.
+- Appliquer des réductions selon certaines conditions.
+- Déterminer si la commande est éligible à la livraison gratuite.
+- Classer les commandes en fonction de leur montant total (petite, moyenne, grande commande).
+Règles de réduction et de livraison
+- Réduction de 10% si le total dépasse 200€.
+- Réduction de 20% si le total dépasse 500€.
+- Livraison gratuite si le total (après réduction) dépasse 100€.
+- Classification des commandes :
+- Petite commande : Moins de 100€.
+- Commande moyenne : Entre 100€ et 500€.
+- Grande commande : Plus de 500€.

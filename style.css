@@ -14,7 +14,7 @@ h1, h2 {
 
 /* Container Styles */
 .container, .form-container, .links-container {
-    width: 60%;
+    width: fit-content;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
@@ -120,8 +120,7 @@ h1, h2 {
 
 /* Table Styles */
 table {
-    width: 80%;
-    margin: 20px auto;
+    margin: 20px;
     border-collapse: collapse;
     background-color: #ffffff;
     border-radius: 8px;
@@ -129,7 +128,7 @@ table {
 }
 
 th, td {
-    padding: 12px 15px;
+    padding: 12px 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }

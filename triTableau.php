@@ -56,31 +56,31 @@ for ($i = 0; $i < $length - 1; $i++) {
 <body>
 
     <h1>Liste des Voitures Triées par Prix</h1>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Marque</th>
-                <th>Modèle</th>
-                <th>Couleur</th>
-                <th>Prix (€)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            // Afficher les données triées par prix
-            foreach ($cars as $car) {
-                echo "<tr>";
-                echo "<td>" . htmlspecialchars($car["marque"]) . "</td>";
-                echo "<td>" . htmlspecialchars($car["modele"]) . "</td>";
-                echo "<td>" . htmlspecialchars($car["couleur"]) . "</td>";
-                echo "<td>" . number_format($car["prix"], 2, ',', ' ') . " €</td>";
-                echo "</tr>";
-            }
-            ?>
-        </tbody>
-    </table>
-
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Marque</th>
+                    <th>Modèle</th>
+                    <th>Couleur</th>
+                    <th>Prix (€)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                // Afficher les données triées par prix
+                foreach ($cars as $car) {
+                    echo "<tr>";
+                    echo "<td>" . htmlspecialchars($car["marque"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($car["modele"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($car["couleur"]) . "</td>";
+                    echo "<td>" . number_format($car["prix"], 2, ',', ' ') . " €</td>";
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
     <div class="back-link">
         <a href="index.php">Retour au menu</a>
     </div>

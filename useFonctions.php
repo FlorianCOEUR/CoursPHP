@@ -81,34 +81,34 @@ usort($cars, function($a, $b) {
 <body>
 
     <h1>Liste des Voitures Triées par Prix</h1>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Indice</th>
-                <th>Marque</th>
-                <th>Modèle</th>
-                <th>Couleur</th>
-                <th>Prix (€)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            // Afficher les données triées par prix
-            foreach ($cars as $car) {
-                $car["indice"]=rand(1,100);
-                echo "<tr>";
-                echo "<td>". number_format($car["indice"],0,'0','0')."</td>";
-                echo "<td>" . htmlspecialchars(strtoupper($car["marque"])) . "</td>";
-                echo "<td>" . htmlspecialchars($car["modele"]) . "</td>";
-                echo "<td>" . htmlspecialchars($car["couleur"]) . "</td>";
-                echo "<td>" . number_format($car["prix"], 2, ',', ' ') . " €</td>";
-                echo "</tr>";
-            }
-            ?>
-        </tbody>
-    </table>
-
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Indice</th>
+                    <th>Marque</th>
+                    <th>Modèle</th>
+                    <th>Couleur</th>
+                    <th>Prix (€)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                // Afficher les données triées par prix
+                foreach ($cars as $car) {
+                    $car["indice"]=rand(1,100);
+                    echo "<tr>";
+                    echo "<td>". number_format($car["indice"],0,'0','0')."</td>";
+                    echo "<td>" . htmlspecialchars(strtoupper($car["marque"])) . "</td>";
+                    echo "<td>" . htmlspecialchars($car["modele"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($car["couleur"]) . "</td>";
+                    echo "<td>" . number_format($car["prix"], 2, ',', ' ') . " €</td>";
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
     <div class="back-link">
         <a href="index.php">Retour au menu</a>
     </div>

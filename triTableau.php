@@ -34,11 +34,11 @@ $cars = [
 
 $length = count($cars);
 for ($i = 0; $i < $length - 1; $i++) {
-    for ($j = 0; $j < $length - $i - 1; $j++) {
-        if ($cars[$j]["prix"] > $cars[$j + 1]["prix"]) {
-            $temp = $cars[$j];
-            $cars[$j] = $cars[$j + 1];
-            $cars[$j + 1] = $temp;
+    for ($j = $i +1; $j < $length; $j++) {
+        if ($cars[$i]["prix"] > $cars[$j]["prix"]) {
+            $temp = $cars[$i];
+            $cars[$i] = $cars[$j];
+            $cars[$j] = $temp;
         }
     }
 }

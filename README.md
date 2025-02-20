@@ -76,3 +76,17 @@ Afficher pour chaque événement :
 - Le jour de la semaine en français
 - Indiquer si l'événement est passé, aujourd’hui ou à venir
 Ajouter une fonctionnalité pour calculer combien de jours restent avant chaque événement.
+
+
+# Exercice 8 : Système de réservation d’un hôtel
+
+Un hôtel souhaite automatiser la gestion de ses réservations en fonction des critères suivants :
+- Réservation
+- Les réservations doivent être faite avec une date de début et une date de fin
+Réductions et surcharges :
+- Réduction de 10% pour les séjours de 7 nuits ou plus.
+- Surcharge de 20% si le séjour est en week-end (vendredi à dimanche).
+Options supplémentaires :
+- Petit-déjeuner → 10€/jour/personne
+- Spa → 30€/séjour
+- Vue sur mer → 20€/jour

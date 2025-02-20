@@ -11,8 +11,8 @@
     <h1>Gestion de commandes d'un e-shop</h1>
 
     <div class="links-container">
-        <a href="inlineshopv1.php">Sans mise en page</a>
-        <a href="inlineshopv2.php">Avec mise en page</a>
+        <a href="inlineshop/inlineshopv1.php">Sans mise en page</a>
+        <a href="inlineshop/inlineshopv2.php">Avec mise en page</a>
     </div>
     <div class="back-link">
         <a href="index.php">Retour au menu</a>

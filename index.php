@@ -17,6 +17,7 @@
         <a href="triTableau.php">Tri de tableau de voitures</a>
         <a href="useFonctions.php">Utilisation des fonctions</a>
         <a href="inlineShop.php">Bilan de tout</a>
+        <a href="dateTable.php">Utilisation de des dates</a>
         <a href="readme.php">Voir le README</a>
     </div>
 </body>

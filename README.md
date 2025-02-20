@@ -64,3 +64,15 @@ Règles de réduction et de livraison
 - Petite commande : Moins de 100€.
 - Commande moyenne : Entre 100€ et 500€.
 - Grande commande : Plus de 500€.
+
+# Exercice 7 : dateTable.php
+
+Générer un tableau associatif contenant 5 événements, chacun ayant une date (au format Y-m-d) et un nom.
+Trier ces événements par date croissante.
+
+Afficher pour chaque événement :
+- Son nom
+- Sa date au format d/m/Y
+- Le jour de la semaine en français
+- Indiquer si l'événement est passé, aujourd’hui ou à venir
+Ajouter une fonctionnalité pour calculer combien de jours restent avant chaque événement.

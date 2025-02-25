@@ -49,7 +49,9 @@ form label {
 /* Style des inputs */
 form input[type="number"],
 form input[type="date"],
-form input[type="checkbox"] {
+form input[type="checkbox"],
+form input[type="text"],
+form select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;

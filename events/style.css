@@ -28,7 +28,14 @@ header a{
 header a:hover{
     background-color: aliceblue;
 }
-
+.aVenir{
+    background-color: green;
+    color: white;
+}
+.passe{
+    background-color: rgba(165, 42, 42, 1);
+    color: white;
+}
 .list{
     display: flex;
     flex-wrap: wrap;
@@ -40,4 +47,30 @@ header a:hover{
     padding: 10px;
     border-radius: 10px;
     border: 1px solid burlywood;
+}
+div a{
+    padding: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 450px;
+    padding: 5px;
+    gap: 10px;
+    border: 1px solid #be7575;
+    border-radius: 5px;
+}
+form div{
+    display: flex;
+    justify-content: space-between;
+}
+form div:last-of-type{
+    justify-content: center;
+}
+form button{
+    padding: 5px 10px;
+}
+table{
+    margin: auto;
 }

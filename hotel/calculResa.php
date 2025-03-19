@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $addBooking="INSERT INTO booking (begin_date, end_date, nb_rooms, user_id, price) VALUES  ('".$dateStart->format('Y-m-d')."', '".$dateEnd->format('Y-m-d')."', ".$roomWanted.", ".$_SESSION['user_id'].", ".$total.")";
         $roomAvailable=((int)$roomBooked['available'])-$roomWanted;
         $updateRoom="UPDATE room SET available=".$roomAvailable;
-        $addBoRoom="INSERT INTO booking_room"
+        $addBoRoom="INSERT INTO booking_room";
         $pdo->query($addBooking);
         $pdo->query($addBoRoom);
         foreach(options() as $option){

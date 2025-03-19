@@ -19,6 +19,7 @@
         <a href="inlineShop.php">Bilan de tout</a>
         <a href="dateTable.php">Utilisation de des dates</a>
         <a href="hotel/hotelReservation.php">L'hotel des coeurs Brisés!</a>
+        <a href="events/index.html">Exercice récap</a>
         <a href="readme.php">Voir le README</a>
     </div>
 </body>

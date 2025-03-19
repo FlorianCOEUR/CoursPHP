@@ -1,0 +1,43 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    margin-bottom: 10px;
+}
+header nav{
+    background-color: rgba(165, 42, 42, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+header nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+header a{
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+}
+header a:hover{
+    background-color: aliceblue;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.list>div{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid burlywood;
+}

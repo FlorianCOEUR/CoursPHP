@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 20px 0;
+}
+header a{
+    background-color: coral;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}

@@ -5,7 +5,6 @@ require 'db.php';
 
 $stmt = $db->query('SELECT * FROM items ORDER BY date');
 $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 echo '<div class="list">';
 foreach ($events as $event) {
     $dateEvent = new DateTime($event['date']);

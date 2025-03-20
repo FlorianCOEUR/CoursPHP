@@ -1,76 +1,180 @@
-
-*{
-    margin:0;
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
-a{
-    text-decoration: none;
-}
-header{
-    margin-bottom: 10px;
-}
-header nav{
-    background-color: rgba(165, 42, 42, 0.5);
-    padding: 10px;
+    
+/* En-tête et navigation */
+header {
+    background: #0145cc;
+    color: white;
+    padding: 10px 0;
     text-align: center;
 }
-header nav li{
-    list-style-type: none;
-    display: inline-block;
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
-header a{
-    color: black;
-    padding: 5px 10px;
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 10px;
+
+nav ul li {
+    margin: 0 15px;
 }
-header a:hover{
-    background-color: aliceblue;
-}
-.aVenir{
-    background-color: green;
+
+nav ul li a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-.passe{
-    background-color: rgba(165, 42, 42, 1);
-    color: white;
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
-.list{
+
+/* Contenu principal */
+.list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
+    gap: 20px;
+    padding: 20px;
 }
-.list>div{
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid burlywood;
+
+.list div {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
 }
-div a{
-    padding: 5px;
+
+.aVenir {
+    color: green;
+    font-weight: bold;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 450px;
-    padding: 5px;
-    gap: 10px;
-    border: 1px solid #be7575;
+
+.passe {
+    color: red;
+    font-weight: bold;
+}
+
+/* Boutons d'action */
+a.participer, a.modifier, a.supprimer, a.participant {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
     border-radius: 5px;
 }
-form div{
-    display: flex;
-    justify-content: space-between;
+
+.participer { background: #28a745; }
+.modifier { background: #ffc107; }
+.supprimer { background: #dc3545; }
+.participant { background: #007bff; }
+
+a.participer:hover, a.modifier:hover, a.supprimer:hover, a.participant:hover {
+    opacity: 0.8;
 }
-form div:last-of-type{
-    justify-content: center;
+
+/* Formulaires */
+form {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-form button{
-    padding: 5px 10px;
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
-table{
-    margin: auto;
+
+input[type="email"], input[type="password"], input[type="text"], input[type="date"], textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"], button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover, button:hover {
+    background: #0056b3;
+}
+
+/* Message d'erreur */
+p {
+    color: red;
+    font-weight: bold;
+}
+
+/* Tableau des participants */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+td a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+tfoot td {
+    background: #f8f9fa;
+    font-weight: bold;
 }

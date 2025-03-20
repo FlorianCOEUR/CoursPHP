@@ -17,11 +17,14 @@ if (
     $event->execute();
     header('Location:index.php');
 } else {
-    echo "Remplir tous les champs";
+    $error = "Remplir tous les champs";
 }
 ?>
 
 <form action="event.php" method="post">
+    <?php if (isset($error)) {
+        echo $error;
+    } ?>
     <div>
         <label for="name">Name : </label>
         <input type="text" name="name" id="name">

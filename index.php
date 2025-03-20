@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes premiers pas en PHP</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
 
     <h1>Mes premiers pas en PHP</h1>
@@ -19,8 +21,9 @@
         <a href="inlineShop.php">Bilan de tout</a>
         <a href="dateTable.php">Utilisation de des dates</a>
         <a href="hotel/hotelReservation.php">L'hotel des coeurs Brisés!</a>
-        <a href="events/index.html">Exercice récap</a>
+        <a href="events/index.php">Exercice récap</a>
         <a href="readme.php">Voir le README</a>
     </div>
 </body>
+
 </html>
